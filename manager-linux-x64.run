@@ -1,0 +1,29 @@
+//CD W/O PATH TO GET TO YOUR USER DIRECTORY (IF NOT ALREADY THERE)  
+$ cd
+//CREATE OR EDIT THE .bash_aliases FILE WITH NANO  
+$ sudo nano .bash_aliases
+//ADD THE FOLLOWING LINES TO THE FILE
+alias letsgo='sudo /opt/lampp/lampp start'
+alias stopit='sudo /opt/lampp/lampp stop'
+//ctl-o TO SAVE, ctl-x TO QUIT NANO
+
+//ONCE OUT OF NANO, RELOAD THE .bashrc FILE
+$ source .bashrc
+
+$ cd /opt/lampp
+$ sudo ./manager-linux-x64.run
+
+//CD W/O PATH TO GET TO YOUR USER DIRECTORY (IF NOT ALREADY THERE)  
+$ cd
+//CREATE OR EDIT THE .bash_aliases FILE WITH NANO  
+$ sudo nano .bash_aliases
+//ADD THE FOLLOWING LINES TO THE FILE
+alias xampp='(cd /opt/lampp && sudo ./manager-linux-x64.run)'
+//ctl-o TO SAVE, ctl-x TO QUIT NANO
+
+//ONCE OUT OF NANO, RELOAD THE .bashrc FILE
+$ source .bashrc
+
+$ sudo /opt/lampp/lampp start
+//OR, AS THE CASE MAY BE 
+$ sudo /opt/lampp/lampp stop
